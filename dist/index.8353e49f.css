@@ -1,0 +1,301 @@
+@font-face {
+  font-family: FuturaNewReg;
+  src: url("FuturaNewBook-Reg.a9520431.eot") format("eot"), url("FuturaNewBook-Reg.c5c10b45.otf") format("otf"), url("FuturaNewBook-Reg.a33d1c31.ttf") format("ttf"), url("FuturaNewBook-Reg.19737f94.woff") format("woff"), url("FuturaNewBook-Reg.ecce4334.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: FuturaNewBold;
+  src: url("FuturaNewBold-Reg.dcf5fc6e.eot") format("eot"), url("FuturaNewBold-Reg.3cdaee45.otf") format("otf"), url("FuturaNewBold-Reg.c628ee5e.ttf") format("ttf"), url("FuturaNewBold-Reg.88be0006.woff") format("woff"), url("FuturaNewBold-Reg.b8a1a78e.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: SchoolBookReg;
+  src: url("Schoolbook Regular.b77fe538.eot") format("eot"), url("Schoolbook Regular.229093dc.otf") format("otf"), url("Schoolbook Regular.bf7ff7aa.ttf") format("ttf"), url("Schoolbook Regular.12ba5410.woff") format("woff"), url("Schoolbook Regular.9ac5c143.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: SchoolBookBold;
+  src: url("SchoolBook Bold.25992403.eot") format("eot"), url("SchoolBook Bold.f8e34cd9.otf") format("otf"), url("SchoolBook Bold.28f8518c.ttf") format("ttf"), url("FuturaNewBook-Reg.19737f94.woff") format("woff");
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+nav, header, footer {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+}
+
+input, button, textarea {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.main {
+  padding-top: 65px;
+}
+
+.main .main__header {
+  width: 91.6667%;
+  margin-bottom: 130px;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: flex;
+}
+
+.main .main__header .header__logo {
+  background-image: url("logo100px.7395c248.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 19.0341%;
+  height: 100px;
+}
+
+.main .main__header .header__menu {
+  align-items: center;
+  width: 71.0795%;
+  display: flex;
+}
+
+.main .main__header .header__menu .header__menu-navigation:not(:last-child) {
+  margin-right: 80px;
+}
+
+.main .main__header .header__menu .header__menu-navigation .header-link-style:hover {
+  color: #080606;
+}
+
+.main .main__header .header__menu .header__menu-navigation .header-link-style {
+  color: #c3b9b5;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 100%;
+}
+
+.main .main__header .header__location {
+  align-items: center;
+  display: flex;
+}
+
+.main .main__header .header__location .header__location-icon {
+  margin-right: 6px;
+}
+
+.main .main__header .header__location .header__location-place .location-link-style:hover {
+  color: coral;
+}
+
+.main .main__header .header__location .header__location-place .location-link-style {
+  color: #ffc59e;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 100%;
+}
+
+.main .main__content {
+  margin-left: 110px;
+  display: flex;
+}
+
+.main .main__content .content__slider {
+  flex-direction: column;
+  display: flex;
+}
+
+.main .main__content .content__slider .content__slider-box:last-child {
+  margin-bottom: 10px;
+}
+
+.main .main__content .content__slider .content__slider-box {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.main .main__content .content__slider .content__slider-box .content__slider-number {
+  color: #c3b9b5;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main .main__content .content__slider .content__slider-box .content__slider-number .header-link-style {
+  color: #c3b9b5;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 100%;
+}
+
+.main .main__content .content__slider .content__slider-box:hover {
+  background-image: url("circle.38dd7cb7.svg");
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.main .main__content .content__slider .content__slider-box:hover .content__slider-number:hover, .main .main__content .content__slider .content__slider-box:hover .content__slider-number:hover .header-link-style {
+  color: #080606;
+}
+
+.main .main__content .content__info {
+  margin-left: 265px;
+  margin-right: 26px;
+}
+
+.main .main__content .content__info .content__info-header {
+  color: #080606;
+  max-width: 645px;
+  margin-bottom: 50px;
+  font-family: SchoolBookReg;
+  font-size: calc(30px + 2.60417vw);
+  line-height: 137.5%;
+}
+
+.main .main__content .content__info .content__info-button {
+  margin-bottom: 197px;
+}
+
+.main .main__content .content__info .content__info-button .button-style:hover {
+  background-color: coral;
+}
+
+.main .main__content .content__info .content__info-button .button-style {
+  color: #fff;
+  background-color: #ffc59e;
+  border-radius: 40px;
+  padding: 24px 77px;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 100%;
+  box-shadow: 0 4px 20px #ffc59e;
+}
+
+.main .main__content .content__info .content__info-icon-number {
+  display: flex;
+}
+
+.main .main__content .content__info .content__info-icon-number .info__icon-img {
+  margin-right: 40px;
+}
+
+.main .main__content .content__info .content__info-icon-number .info__icon-img:hover {
+  fill: #080606;
+}
+
+.main .main__content .content__img {
+  aspect-ratio: 139 / 131;
+  background-image: url("catdog.6b0a3aff.png");
+  background-repeat: no-repeat;
+  width: 834px;
+  height: 786px;
+  position: relative;
+}
+
+.main .main__content .content__img .content__info-number {
+  color: #59443f;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: 24px;
+  line-height: 125%;
+  position: absolute;
+  bottom: 80px;
+  left: 544px;
+}
+
+.card {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.card .card__content {
+  grid-gap: 24px;
+  grid-template-columns: 320px 320px 320px 320px;
+  margin-left: 284px;
+  margin-right: 284px;
+  display: grid;
+}
+
+.card .card__content .card__content-block {
+  background-color: #fffefe;
+  border-radius: 20px;
+  grid-template: "header header" 64px
+                 "text icon" 156px
+                 / 100px 220px;
+  align-items: end;
+  display: grid;
+  box-shadow: 2px 2px 6px #e6e3e3;
+}
+
+.card .card__content .card__content-block .card-header {
+  color: #59443f;
+  grid-area: header;
+  padding-top: 24px;
+  padding-left: 24px;
+  font-family: SchoolBookReg;
+  font-size: 30px;
+  line-height: 133%;
+}
+
+.card .card__content .card__content-block .header-diagnostics {
+  padding-top: 0;
+}
+
+.card .card__content .card__content-block .card-service {
+  color: #59443f;
+  grid-area: text;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.card .card__content .card__content-block .card-icon {
+  grid-area: icon;
+  justify-self: end;
+  padding-bottom: 24px;
+  padding-right: 24px;
+}
+
+.card .card__content .card__content-block .card-icon svg path:hover {
+  fill: #59443f;
+}
+
+.card .card__content .card__content-block:hover {
+  cursor: url("cursor.366d9874.svg"), pointer;
+  box-shadow: 2px 2px 6px #59443f;
+}
+
+.card .card__content .card__content-block:hover svg path {
+  fill: #59443f;
+}
+
+/*# sourceMappingURL=index.8353e49f.css.map */

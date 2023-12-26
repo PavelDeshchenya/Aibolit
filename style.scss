@@ -1,0 +1,300 @@
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: "FuturaNewReg";
+  src: url("./fonts/FuturaNewBook-Reg.eot") format("eot"),
+    url("./fonts/FuturaNewBook-Reg.otf") format("otf"),
+    url("./fonts/FuturaNewBook-Reg.ttf") format("ttf"),
+    url("./fonts/FuturaNewBook-Reg.woff") format("woff"),
+    url("./fonts/FuturaNewBook-Reg.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaNewBold";
+  src: url("./fonts/FuturaNewBold-Reg.eot") format("eot"),
+    url("./fonts/FuturaNewBold-Reg.otf") format("otf"),
+    url("./fonts/FuturaNewBold-Reg.ttf") format("ttf"),
+    url("./fonts/FuturaNewBold-Reg.woff") format("woff"),
+    url("./fonts/FuturaNewBold-Reg.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "SchoolBookReg";
+  src: url("./fonts/Schoolbook\ Regular.eot") format("eot"),
+    url("./fonts/Schoolbook\ Regular.otf") format("otf"),
+    url("./fonts/Schoolbook\ Regular.ttf") format("ttf"),
+    url("./fonts/Schoolbook\ Regular.woff") format("woff"),
+    url("./fonts/Schoolbook\ Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SchoolBookBold";
+  src: url("./fonts/SchoolBook\ Bold.eot") format("eot"),
+    url("./fonts/SchoolBook\ Bold.otf") format("otf"),
+    url("./fonts/SchoolBook\ Bold.ttf") format("ttf"),
+    url("./fonts/FuturaNewBook-Reg.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+nav,
+header,
+footer {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.main {
+  padding-top: 65px;
+  .main__header {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 130px;
+
+    width: calc((1760 / 1920) * 100%);
+    display: flex;
+    .header__logo {
+      background-image: url("./img/logo100px.svg");
+      background-size: auto;
+
+      width: calc((335 / 1760) * 100%);
+      height: 100px;
+      background-repeat: no-repeat;
+    }
+    .header__menu {
+      display: flex;
+      align-items: center;
+
+      width: calc((1251 / 1760) * 100%);
+
+      .header__menu-navigation:not(:last-child) {
+        margin-right: 80px;
+      }
+      .header__menu-navigation {
+        .header-link-style:hover {
+          color: #080606;
+        }
+        .header-link-style {
+          @include headerfont;
+          font-size: $font20;
+        }
+      }
+    }
+    .header__location {
+      display: flex;
+      align-items: center;
+      .header__location-icon {
+        margin-right: 6px;
+      }
+      .header__location-place {
+        .location-link-style:hover {
+          color: #ff7f50;
+        }
+        .location-link-style {
+          color: #ffc59e;
+          line-height: 100%;
+          font-family: "FuturaNewBold", sans-serif;
+          font-size: $font20;
+        }
+      }
+    }
+  }
+  .main__content {
+    display: flex;
+    margin-left: 110px;
+    .content__slider {
+      display: flex;
+      flex-direction: column;
+      .content__slider-box:last-child {
+        margin-bottom: 10px;
+      }
+      .content__slider-box {
+        margin-bottom: 50px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        .content__slider-number {
+          position: absolute;
+          @include headerfont;
+          font-size: $font20;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .header-link-style {
+            @include headerfont;
+            font-size: $font20;
+          }
+        }
+      }
+      .content__slider-box:hover {
+        background-image: url("./img/circle.svg");
+        width: 40px;
+        height: 40px;
+        position: relative;
+
+        .content__slider-number:hover {
+          color: #080606;
+          .header-link-style {
+            color: #080606;
+          }
+        }
+      }
+    }
+
+    .content__info {
+      margin-left: 265px;
+      margin-right: 26px;
+      .content__info-header {
+        font-size: $fontHeader;
+        color: #080606;
+        line-height: 137.5%;
+        font-family: "SchoolBookReg";
+        max-width: 645px;
+        margin-bottom: 50px;
+      }
+      .content__info-button {
+        margin-bottom: 197px;
+        .button-style:hover {
+          background-color: #ff7f50;
+        }
+        .button-style {
+          background-color: #ffc59e;
+          box-shadow: 0px 4px 20px 0px #ffc59e;
+          @include headerfont;
+          color: #ffffff;
+          font-size: $font20;
+          padding: 24px 77px 24px 77px;
+          border-radius: 40px;
+        }
+      }
+      .content__info-icon-number {
+        display: flex;
+        .info__icon-img {
+          margin-right: 40px;
+        }
+        .info__icon-img:hover {
+          fill: #080606;
+        }
+      }
+    }
+    .content__img {
+      background-image: url("./img/catdog.png");
+      background-repeat: no-repeat;
+      width: 834px;
+      height: 786px;
+      aspect-ratio: 139/131;
+      position: relative;
+      .content__info-number {
+        color: #59443f;
+        line-height: 125%;
+        font-family: "FuturaNewBold", sans-serif;
+        font-size: 24px;
+        position: absolute;
+        left: 544px;
+        bottom: 80px;
+      }
+    }
+  }
+}
+.card {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  .card__content {
+    margin-left: 284px;
+    margin-right: 284px;
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-gap: 24px;
+    .card__content-block {
+      border-radius: 20px;
+      background-color: #fffefe;
+      box-shadow: 2px 2px 6px 0px rgb(230, 227, 227);
+      display: grid;
+      grid-template-columns: 100px 220px;
+      grid-template-rows: 64px 156px;
+      grid-template-areas:
+        "header header"
+        "text  icon";
+      align-items: end;
+      .card-header {
+        grid-area: header;
+        font-family: "SchoolBookReg";
+        font-size: 30px;
+        line-height: 133%;
+        color: #59443f;
+        padding-left: 24px;
+        padding-top: 24px;
+      }
+      .header-diagnostics {
+        padding-top: 0px;
+      }
+      .card-service {
+        grid-area: text;
+        font-family: "FuturaNewReg", sans-serif;
+        font-size: 20px;
+        line-height: 100%;
+        color: #59443f;
+        padding-left: 24px;
+        padding-bottom: 24px;
+      }
+      .card-icon {
+        grid-area: icon;
+
+        justify-self: end;
+        padding-right: 24px;
+        padding-bottom: 24px;
+        svg path:hover {
+          fill: #59443f;
+        }
+      }
+    }
+
+    .card__content-block:hover {
+      box-shadow: 2px 2px 6px 0px #59443f;
+      cursor: url("./img/card/cursor.svg"), pointer;
+      svg path {
+        fill: #59443f;
+      }
+    }
+  }
+}
