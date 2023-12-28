@@ -3,3 +3,31 @@
   line-height: 100%;
   font-family: "FuturaNewBold", sans-serif;
 }
+
+@mixin boxesinfo {
+  font-family: "FuturaNewReg", sans-serif;
+  font-size: 20px;
+  color: #59443f;
+  font-weight: 400;
+}
+
+@mixin boxesheader {
+  font-family: "SchoolBookReg";
+  font-size: 30px;
+  line-height: 133%;
+  font-weight: 400;
+}
+
+@mixin history_adv_font_header {
+  font-family: "SchoolBookReg";
+  font-size: $font40;
+  line-height: 100%;
+  color: #080606;
+}
+@mixin footerfont {
+  font-family: "FuturaNewReg", sans-serif;
+  font-size: calc(5px + 15 * (100vw / 1920));
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 150%;
+}

@@ -261,6 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 24px;
   font-family: SchoolBookReg;
   font-size: 30px;
+  font-weight: 400;
   line-height: 133%;
 }
 
@@ -275,6 +276,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 24px;
   font-family: FuturaNewReg, sans-serif;
   font-size: 20px;
+  font-weight: 400;
   line-height: 100%;
 }
 
@@ -289,6 +291,13 @@ h1, h2, h3, h4, h5, h6 {
   fill: #59443f;
 }
 
+.card .card__content .block-diagnostics-exotic {
+  grid-template: "header header" 100px
+                 "text icon" 120px
+                 / 98px 222px;
+  display: grid;
+}
+
 .card .card__content .card__content-block:hover {
   cursor: url("cursor.366d9874.svg"), pointer;
   box-shadow: 2px 2px 6px #59443f;
@@ -296,6 +305,472 @@ h1, h2, h3, h4, h5, h6 {
 
 .card .card__content .card__content-block:hover svg path {
   fill: #59443f;
+}
+
+.history {
+  background-color: #fbf8f8;
+  padding-top: 180px;
+  padding-bottom: 206px;
+}
+
+.history .history__content {
+  margin-left: 333px;
+  margin-right: 334px;
+}
+
+.history .history__content .history__block {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.history .history__content .history__content-header {
+  color: #080606;
+  margin-bottom: 48px;
+  font-family: SchoolBookReg;
+  font-size: calc(20px + 1.04167vw);
+  line-height: 100%;
+}
+
+.history .history__content .history__content-info {
+  color: #59443f;
+  max-width: 38.9%;
+  margin-bottom: 36px;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 150%;
+}
+
+.history .history__content .history__content-next {
+  width: 15%;
+  display: flex;
+}
+
+.history .history__content .history__content-next .content-next {
+  margin-bottom: 100px;
+  padding-top: 2px;
+}
+
+.history .history__content .history__content-next .next-style {
+  color: #ffc59e;
+  margin-right: 5px;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 100%;
+}
+
+.history .history__content .history__content-next .arrow-next {
+  height: 24px;
+}
+
+.history .history__content .history__content-caurosel {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.history .history__content .history__content-caurosel .caurosel-header {
+  color: #080606;
+  margin-bottom: 48px;
+  font-family: SchoolBookReg;
+  font-size: calc(20px + 1.04167vw);
+  line-height: 100%;
+}
+
+.history .history__content .history__content-caurosel .caurosel-slider {
+  align-items: center;
+  margin-bottom: 36px;
+  display: flex;
+}
+
+.history .history__content .history__content-caurosel .caurosel-slider .caurosel-slider-img {
+  margin-right: 15px;
+}
+
+.history .history__content .history__content-caurosel .caurosel-slider .caurosel-slider-img:last-child {
+  margin-right: 0;
+}
+
+.history .history__content .history__content-caurosel .caurosel-slider .left-arrow .left-arrow-box {
+  background-color: #ffc59e;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  box-shadow: 0 2px 40px #0003;
+}
+
+.history .history__content .history__content-caurosel .caurosel-slider .left-arrow .left-arrow-box .left-arrow-arrow {
+  max-height: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.history .history__content .history__content-caurosel .caurosel-slider .left-arrow-box:hover {
+  background-color: coral;
+}
+
+.history .history__content .history__content-caurosel .caurosel-view {
+  display: flex;
+}
+
+.history .history__content .history__content-caurosel .caurosel-view .caurosel-next {
+  padding-top: 2px;
+}
+
+.history .history__content .history__content-caurosel .caurosel-view .next-style {
+  color: #ffc59e;
+  margin-right: 5px;
+  font-family: FuturaNewBold, sans-serif;
+  font-size: calc(5px + .78125vw);
+  line-height: 100%;
+}
+
+.history .history__content .history__content-caurosel .caurosel-view .arrow-next {
+  height: 24px;
+}
+
+.bird {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 316px;
+  padding-bottom: 316px;
+  display: flex;
+}
+
+.bird .bird__header {
+  color: #59443f;
+  font-family: SchoolBookReg, sans-serif;
+  font-size: calc(40px + 5.41667vw);
+  font-weight: 700;
+  line-height: 131%;
+}
+
+.bird .bird__info {
+  color: #080606;
+  width: 40%;
+  padding-left: 40px;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: calc(20px + 3.125vw);
+  line-height: 137.5%;
+  position: relative;
+}
+
+.bird .bird__info .bird__info-img {
+  position: absolute;
+  top: 72%;
+  left: 55%;
+}
+
+.adv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.adv .adv__container {
+  flex-direction: column;
+  align-items: center;
+  width: 86%;
+  display: flex;
+}
+
+.adv .adv__container .adv__header {
+  color: #080606;
+  margin-bottom: 104px;
+  font-family: SchoolBookReg;
+  font-size: calc(20px + 1.04167vw);
+  line-height: 100%;
+}
+
+.adv .adv__container .adv__cards {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.adv .adv__container .adv__cards .adv__card {
+  flex-direction: column;
+  width: 33%;
+  margin-bottom: 70px;
+  display: flex;
+}
+
+.adv .adv__container .adv__cards .adv__card .adv__card-header {
+  color: #080606;
+  margin-bottom: 36px;
+  font-family: SchoolBookReg;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 133%;
+}
+
+.adv .adv__container .adv__cards .adv__card .adv__card-img-info {
+  height: 150px;
+  display: flex;
+}
+
+.adv .adv__container .adv__cards .adv__card .adv__card-img-info .adv__card-img {
+  object-position: center;
+  width: 166px;
+  position: relative;
+}
+
+.adv .adv__container .adv__cards .adv__card .adv__card-img-info .adv__card-img .imgposition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.adv .adv__container .adv__cards .adv__card .adv__card-img-info .adv__card-info {
+  color: #59443f;
+  width: 59%;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.adv .adv__container .adv__cards .adv__card:hover {
+  cursor: pointer;
+  border-radius: 15px;
+  padding-left: 2px;
+  box-shadow: 2px 2px 5px #cac9c9;
+}
+
+.adv .adv__container .adv__cards .adv__card:hover svg path {
+  fill: coral;
+}
+
+.app {
+  background-color: #ffc59e;
+  padding: 251px 274px 346px 230px;
+  display: flex;
+  position: relative;
+}
+
+.app .app__info {
+  flex-direction: column;
+  display: flex;
+}
+
+.app .app__info .app__tba {
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 66.67%;
+}
+
+.app .app__info .app__header {
+  color: #fff;
+  width: 830px;
+  font-family: SchoolBookReg;
+  font-size: calc(20px + 3.125vw);
+  font-weight: 400;
+  line-height: 133%;
+}
+
+.app .app__info .app__market {
+  margin-top: 30px;
+  display: flex;
+}
+
+.app .app__info .app__market .app__market-IOS {
+  padding-top: 11px;
+}
+
+.app .app__img-dog {
+  z-index: 50;
+  position: absolute;
+  top: 34%;
+  left: 44%;
+}
+
+.app .app__img-phone {
+  z-index: 100;
+  position: absolute;
+  top: 21%;
+  left: 59.9%;
+}
+
+.contacts {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 235px;
+  padding-bottom: 209px;
+  display: flex;
+}
+
+.contacts .contacts__header {
+  color: #080606;
+  width: 76%;
+  margin-bottom: 70px;
+  font-family: SchoolBookReg;
+  font-size: calc(20px + 1.04167vw);
+  line-height: 100%;
+}
+
+.contacts .contacts__info-map {
+  width: 76%;
+  display: flex;
+}
+
+.contacts .contacts__info-map .contacts__info {
+  width: 35%;
+}
+
+.contacts .contacts__info-map .contacts__info .contacts__info-adress .info-adress-header {
+  color: #080606;
+  margin-bottom: 20px;
+  font-family: SchoolBookReg;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 133%;
+}
+
+.contacts .contacts__info-map .contacts__info .contacts__info-adress .info-adress-list .adress-list {
+  align-items: center;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.contacts .contacts__info-map .contacts__info .contacts__info-adress .info-adress-list .adress-list .list-icon {
+  color: #59443f;
+  margin-right: 20px;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts .contacts__info-map .contacts__info .contacts__info-adress .info-adress-list .adress-list .adress-text {
+  width: 40%;
+}
+
+.contacts .contacts__info-map .contacts__info .contacts__info-adress .info-adress-list .time {
+  margin-bottom: 0;
+}
+
+.contacts .contacts__info-map .contacts__info .margin-contcts {
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #59443f;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.footer .footer__container {
+  width: 76%;
+  display: flex;
+}
+
+.footer .footer__container .footer__logo {
+  margin-right: 22px;
+}
+
+.footer .footer__container .footer__logo-description {
+  width: 14.1%;
+  margin-right: 80px;
+}
+
+.footer .footer__container .footer__logo-description .logo-description {
+  color: #fff;
+  margin-bottom: 29px;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: calc(5px + .78125vw);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.footer .footer__container .footer__logo-description .bigfont {
+  color: #fff;
+  margin-bottom: 5px;
+  font-family: SchoolBookReg;
+  font-size: calc(20px + 1.5625vw);
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.footer .footer__container .footer__logo-description .footer__link-style {
+  color: #fff;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: calc(5px + .78125vw);
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.footer .footer__container .footer__logo-description .politics {
+  width: 91%;
+}
+
+.footer .footer__container .footer__nav {
+  width: 12.8%;
+  margin-top: 102px;
+  margin-right: 100px;
+}
+
+.footer .footer__container .footer__nav .footer__list-item .footer__link-style {
+  color: #fff;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: calc(5px + .78125vw);
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.footer .footer__container .footer__nav-margin {
+  margin-right: 258px;
+}
+
+.footer .footer__container .footer__contacts {
+  flex-direction: column;
+  display: flex;
+}
+
+.footer .footer__container .footer__contacts .app__block {
+  align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.footer .footer__container .footer__contacts .app__block .ios-stores {
+  margin-right: 13px;
+}
+
+.footer .footer__container .footer__contacts .footer__social {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.footer .footer__container .footer__contacts .footer__social .footer__social-media:not(:last-child) {
+  margin-right: 50px;
+}
+
+.footer .footer__container .footer__contacts .footer__mail-link {
+  color: #fff;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: calc(5px + .78125vw);
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.footer .footer__container .footer__contacts .link2 {
+  margin-bottom: 60px;
+}
+
+.footer .footer__container .footer__contacts .madeby {
+  color: #fff;
+  font-family: FuturaNewReg, sans-serif;
+  font-size: calc(5px + .78125vw);
+  font-weight: 400;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=index.8353e49f.css.map */

@@ -258,9 +258,7 @@ h6 {
       align-items: end;
       .card-header {
         grid-area: header;
-        font-family: "SchoolBookReg";
-        font-size: 30px;
-        line-height: 133%;
+        @include boxesheader;
         color: #59443f;
         padding-left: 24px;
         padding-top: 24px;
@@ -270,10 +268,8 @@ h6 {
       }
       .card-service {
         grid-area: text;
-        font-family: "FuturaNewReg", sans-serif;
-        font-size: 20px;
+        @include boxesinfo;
         line-height: 100%;
-        color: #59443f;
         padding-left: 24px;
         padding-bottom: 24px;
       }
@@ -289,11 +285,418 @@ h6 {
       }
     }
 
+    .block-diagnostics-exotic {
+      display: grid;
+      grid-template-columns: 98px 222px;
+      grid-template-rows: 100px 120px;
+      grid-template-areas:
+        "header header"
+        "text  icon";
+    }
+
     .card__content-block:hover {
       box-shadow: 2px 2px 6px 0px #59443f;
       cursor: url("./img/card/cursor.svg"), pointer;
       svg path {
         fill: #59443f;
+      }
+    }
+  }
+}
+
+.history {
+  background-color: #fbf8f8;
+  padding-top: 180px;
+  padding-bottom: 206px;
+  .history__content {
+    margin-left: 333px;
+    margin-right: 334px;
+    .history__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .history__content-header {
+      @include history_adv_font_header;
+      margin-bottom: 48px;
+    }
+    .history__content-info {
+      font-family: "FuturaNewReg", sans-serif;
+      font-size: $font20;
+      line-height: 150%;
+      margin-bottom: 36px;
+      color: #59443f;
+      max-width: 38.9%;
+    }
+
+    .history__content-next {
+      display: flex;
+      width: 15%;
+
+      .content-next {
+        padding-top: 2px;
+        margin-bottom: 100px;
+      }
+      .next-style {
+        font-family: "FuturaNewBold", sans-serif;
+        font-size: $font20;
+        line-height: 100%;
+
+        color: #ffc59e;
+        margin-right: 5px;
+      }
+      .arrow-next {
+        height: 24px;
+      }
+    }
+    .history__content-caurosel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .caurosel-header {
+        @include history_adv_font_header;
+        margin-bottom: 48px;
+      }
+      .caurosel-slider {
+        display: flex;
+        align-items: center;
+        margin-bottom: 36px;
+        .caurosel-slider-img {
+          margin-right: 15px;
+        }
+        .caurosel-slider-img:last-child {
+          margin-right: 0px;
+        }
+        .left-arrow {
+          .left-arrow-box {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ffc59e;
+            box-shadow: 0px 2px 40px 0px #00000033;
+            position: relative;
+            .left-arrow-arrow {
+              max-height: 14px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+        .left-arrow-box:hover {
+          background-color: #ff7f50;
+        }
+      }
+      .caurosel-view {
+        display: flex;
+        .caurosel-next {
+          padding-top: 2px;
+        }
+        .next-style {
+          font-family: "FuturaNewBold", sans-serif;
+          font-size: $font20;
+          line-height: 100%;
+          color: #ffc59e;
+          margin-right: 5px;
+        }
+        .arrow-next {
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.bird {
+  padding-top: 316px;
+  // padding-left: 602px;
+  // padding-right: 602px;
+  padding-bottom: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .bird__header {
+    font-size: $font144;
+    font-family: "SchoolBookReg", sans-serif;
+    font-weight: 700;
+    line-height: 131%;
+    color: #59443f;
+  }
+  .bird__info {
+    padding-left: 40px;
+    font-size: $font80;
+    font-family: "FuturaNewReg", sans-serif;
+
+    line-height: 137.5%;
+    color: #080606;
+    width: 40%;
+    position: relative;
+    .bird__info-img {
+      position: absolute;
+      left: 55%;
+      top: 72%;
+    }
+  }
+}
+
+.adv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .adv__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 86%;
+    .adv__header {
+      @include history_adv_font_header;
+      margin-bottom: 104px;
+    }
+    .adv__cards {
+      display: flex;
+      flex-wrap: wrap;
+      .adv__card {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        margin-bottom: 70px;
+
+        .adv__card-header {
+          @include boxesheader;
+          color: #080606;
+          margin-bottom: 36px;
+        }
+        .adv__card-img-info {
+          display: flex;
+          height: 150px;
+          .adv__card-img {
+            width: 166px;
+            object-position: center;
+            position: relative;
+            .imgposition {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .adv__card-info {
+            @include boxesinfo;
+            line-height: 150%;
+            width: 59%;
+          }
+        }
+      }
+      .adv__card:hover {
+        box-shadow: 2px 2px 5px 0 rgb(202, 201, 201);
+        border-radius: 15px;
+        cursor: pointer;
+        padding-left: 2px;
+        svg path {
+          fill: #ff7f50;
+        }
+      }
+    }
+  }
+}
+
+.app {
+  background-color: #ffc59e;
+
+  padding-top: 251px;
+  padding-left: 230px;
+  padding-right: 274px;
+  padding-bottom: 346px;
+  display: flex;
+  position: relative;
+
+  display: flex;
+  .app__info {
+    display: flex;
+    flex-direction: column;
+
+    .app__tba {
+      font-family: "FuturaNewReg", sans-serif;
+      font-size: 30px;
+      color: #ffffff;
+      font-weight: 400;
+      line-height: 66.67%;
+      margin-bottom: 30px;
+    }
+    .app__header {
+      font-family: "SchoolBookReg";
+      font-size: $font80;
+      line-height: 133%;
+      font-weight: 400;
+      color: #ffffff;
+      width: 830px;
+    }
+    .app__market {
+      margin-top: 30px;
+      display: flex;
+      .app__market-IOS {
+        padding-top: 11px;
+      }
+    }
+  }
+
+  .app__img-dog {
+    position: absolute;
+    left: 44%;
+    top: 34%;
+    z-index: 50;
+  }
+  .app__img-phone {
+    position: absolute;
+    z-index: 100;
+    left: 59.9%;
+    top: 21%;
+  }
+}
+
+.contacts {
+  padding-top: 235px;
+  padding-bottom: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contacts__header {
+    width: 76%;
+    @include history_adv_font_header;
+    margin-bottom: 70px;
+  }
+  .contacts__info-map {
+    width: 76%;
+    display: flex;
+
+    .contacts__info {
+      width: 35%;
+      .contacts__info-adress {
+        .info-adress-header {
+          @include boxesheader;
+          color: #080606;
+          margin-bottom: 20px;
+        }
+        .info-adress-list {
+          .adress-list {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            .list-icon {
+              @include boxesinfo;
+              line-height: 150%;
+              margin-right: 20px;
+            }
+
+            .adress-text {
+              width: 40%;
+            }
+          }
+
+          .time {
+            margin-bottom: 0px;
+          }
+        }
+      }
+      .margin-contcts {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .contacts__map {
+  }
+}
+
+.footer {
+  background-color: #59443f;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  .footer__container {
+    width: 76%;
+    display: flex;
+    .footer__logo {
+      margin-right: 22px;
+    }
+    .footer__logo-description {
+      width: 14.1%;
+      margin-right: 80px;
+      .logo-description {
+        font-family: "FuturaNewReg", sans-serif;
+        font-size: calc(5px + 15 * (100vw / 1920));
+        color: #ffffff;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 29px;
+      }
+      .bigfont {
+        font-family: "SchoolBookReg";
+        font-size: calc(20px + 30 * (100vw / 1920));
+        line-height: 90%;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 5px;
+      }
+      .footer__link-style {
+        @include footerfont;
+      }
+      .politics {
+        width: 91%;
+      }
+    }
+
+    .footer__nav {
+      margin-top: 102px;
+      width: 12.8%;
+      margin-right: 100px;
+      .footer__list-item {
+        .footer__link-style {
+          @include footerfont;
+        }
+      }
+    }
+    .footer__nav-margin {
+      margin-right: 258px;
+    }
+
+    .footer__contacts {
+      display: flex;
+      flex-direction: column;
+      .app__block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        .app__stores {
+        }
+        .ios-stores {
+          margin-right: 13px;
+        }
+        .google-stores {
+        }
+      }
+
+      .footer__social {
+        display: flex;
+        margin-bottom: 30px;
+        .footer__social-media:not(:last-child) {
+          margin-right: 50px;
+        }
+      }
+
+      .footer__mail-link {
+        @include footerfont;
+      }
+      .link1 {
+      }
+      .link2 {
+        margin-bottom: 60px;
+      }
+      .madeby {
+        @include footerfont;
       }
     }
   }
